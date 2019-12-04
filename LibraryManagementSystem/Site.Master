@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LibraryManagementSystem.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+           
+               
+            <nav id = "navigation"> 
+                <h1>Sheridan Library</h1>
+                <div id = "navigation-inner">
+                    <asp:Button ID="Button1" runat="server" Text="Register"  CssClass ="nav-button" CausesValidation="false" OnClick="Button1_Click"/>
+
+                    
+                    <asp:Button ID="Button3" runat="server" Text="Logout" class ="nav-button" CausesValidation="false" OnClick="Button3_Click" />
+                        
+                   
+                </div>
+            </nav>
+            <div id ="content" class ="flex-center-center">
+              
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolderLogin" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolderMember" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolderMemberEdit" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolderLibrarian" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderAdmin" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderLogout" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderRoot" runat="server" Visible="true"></asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderRegister" runat="server" Visible="true"></asp:ContentPlaceHolder>
+            </div>
+             
+
+            <footer>
+                <br>
+                <p>Adrian Angara - 991538458</p>&nbsp;&nbsp;||&nbsp;&nbsp;
+                <p>Komalpreet Aulakh - 991497738</p>&nbsp;&nbsp;||&nbsp;&nbsp;
+                <p>Gurmandeep Singh Gill - 991517131</p>
+                <br>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

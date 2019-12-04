@@ -1,0 +1,165 @@
+﻿/*General Settings*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*General: Native*/
+.bubble {
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.bubble-extra {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-spaceBetween-flexStart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.grid-2rows-1fr-2fr {
+    display: grid;
+    grid-template-areas: 'top top top' 'main main main' 'main main main';
+    grid-gap: 10px;
+}
+
+.color1 {
+    background-color: rgba(232, 233, 235, 1);
+}
+
+/*Navigation and Footer*/
+#navigation {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 110px;
+    background-color: rgba(7, 16, 19, 1);
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+#navigation-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+#navigation-inner a {
+    color: #ffffff;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: 0px transparent;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.nav-button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(7, 16, 19, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    bottom: 0;
+}
+
+#content {
+    padding: 100px;
+    width: 100%;
+    background-color: rgba(86, 78, 88, 1);
+}
+
+/*Login.aspx*/
+#login-form {
+    background-color: rgba(232, 233, 235, 1);
+    
+}
+
+/*Member.aspx*/
+#member-info {
+    background-color: rgba(232, 233, 235, 1);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    padding: 50px;
+    grid-area: member;
+}
+
+#main-section-member {
+    display: grid;
+    grid-template-areas: 'member member member' 'table table table' 'table table table';
+    grid-gap: 10px;
+}
+
+
+#tables-info {
+    grid-area: table;
+    background-color: rgba(232, 233, 235, 1);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+    text-align: center;
+}
+
+
+
+
